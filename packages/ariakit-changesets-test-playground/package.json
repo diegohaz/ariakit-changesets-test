@@ -1,6 +1,6 @@
 {
   "name": "ariakit-changesets-test-playground",
-  "version": "1.0.0-alpha.25",
+  "version": "0.17.0-alpha.25",
   "description": "ariakit-changesets-test playground",
   "sideEffects": false,
   "license": "MIT",
@@ -45,12 +45,12 @@
     "@codemirror/view": "0.19.48",
     "@codesandbox/sandpack-client": "0.18.0",
     "@emotion/react": "^11.7.1",
+    "ariakit-changesets-test": "^2.0.0-alpha.25",
     "ariakit-changesets-test-utils": "0.17.0-alpha.16",
     "codesandbox-import-utils": "^2.2.3",
     "prismjs": "^1.26.0"
   },
   "peerDependencies": {
-    "ariakit-changesets-test": "^2.0.0-alpha.25",
     "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
   },
   "devDependencies": {
