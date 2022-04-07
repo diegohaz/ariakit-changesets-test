@@ -1,6 +1,6 @@
 {
   "name": "ariakit-changesets-test-test-utils",
-  "version": "0.17.0-alpha.17",
+  "version": "0.17.0-alpha.18",
   "description": "ariakit-changesets-test test utils",
   "sideEffects": false,
   "license": "MIT",
@@ -30,7 +30,7 @@
     "react"
   ],
   "dependencies": {
-    "ariakit-changesets-test-utils": "0.17.0-alpha.15"
+    "ariakit-changesets-test-utils": "0.17.0-alpha.16"
   },
   "peerDependencies": {
     "@testing-library/dom": "^8.0.0",

@@ -1,6 +1,6 @@
 {
   "name": "ariakit-changesets-test-utils",
-  "version": "0.17.0-alpha.15",
+  "version": "0.17.0-alpha.16",
   "description": "ariakit-changesets-test utils",
   "sideEffects": false,
   "license": "MIT",
