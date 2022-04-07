@@ -18,7 +18,7 @@
     "build": "lerna exec --scope ariakit-changesets-test* -- npm run build",
     "build-website": "lerna exec --scope website -- npm run build",
     "clean": "npm run clean -ws --if-present",
-    "prerelease": "npm run lint && npm run build && npm run test",
+    "prerelease": "npm run build",
     "release": "changeset publish",
     "release-alpha": "changeset pre enter alpha",
     "release-beta": "changeset pre enter beta",
