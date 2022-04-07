@@ -1,5 +1,12 @@
 # ariakit-changesets-test
 
+## 2.1.1
+
+### Patch Changes
+
+- Summary
+- Updated dependencies: `ariakit-changesets-test-utils@0.17.1`.
+
 ## 2.1.0
 
 ### Minor Changes
