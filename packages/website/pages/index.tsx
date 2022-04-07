@@ -62,9 +62,9 @@ export default function Home() {
     <div className="flex flex-col gap-4 p-5">
       <h1 className="text-3xl font-semibold">Hello!</h1>
       <p>
-        The Ariakit docs are still under construction. You can{" "}
+        The ariakit-changesets-test docs are still under construction. You can{" "}
         <a
-          href="https://newsletter.ariakit.org"
+          href="https://newsletter.ariakit-changesets-test.org"
           className="text-primary-1 underline hover:no-underline dark:text-primary-1-dark"
         >
           subscribe to our newsletter

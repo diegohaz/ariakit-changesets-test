@@ -1,0 +1,48 @@
+{
+  "name": "ariakit-changesets-test",
+  "version": "2.0.0-alpha.21",
+  "description": "Toolkit for building accessible web apps with React",
+  "sideEffects": false,
+  "license": "MIT",
+  "homepage": "https://ariakit-changesets-test.org",
+  "main": "cjs/index.js",
+  "module": "esm/index.js",
+  "unpkg": "umd/ariakit-changesets-test.min.js",
+  "types": "ts/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ariakit-changesets-test/ariakit-changesets-test.git",
+    "directory": "packages/ariakit-changesets-test"
+  },
+  "author": {
+    "name": "Diego Haz",
+    "email": "hazdiego@gmail.com",
+    "url": "https://github.com/diegohaz"
+  },
+  "funding": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/ariakit-changesets-test"
+  },
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint . --ext js,ts,tsx",
+    "build": "node ../../scripts/build",
+    "clean": "node ../../scripts/build/clean.js"
+  },
+  "keywords": [
+    "ariakit-changesets-test",
+    "a11y",
+    "react",
+    "ui",
+    "toolkit",
+    "components"
+  ],
+  "dependencies": {
+    "@popperjs/core": "^2.11.2",
+    "ariakit-changesets-test-utils": "file:../ariakit-changesets-test-utils"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
+    "react-dom": "^16.8.0 || ^17.0.0 || ^18.0.0"
+  }
+}

@@ -265,14 +265,14 @@ module.exports = {
       addUtilities(shadowUtilities);
 
       addUtilities({
-        ".ariakit-outline": {
+        ".ariakit-changesets-test-outline": {
           outline: `2px solid ${theme("colors.primary-2.DEFAULT")}`,
           outlineOffset: "2px",
         },
       });
 
       addUtilities({
-        ".ariakit-outline-input": {
+        ".ariakit-changesets-test-outline-input": {
           outline: `2px solid ${theme("colors.primary-2.DEFAULT")}`,
         },
       });

@@ -2,17 +2,17 @@
   "extends": "./tsconfig.prod.json",
   "compilerOptions": {
     "paths": {
-      "ariakit": ["packages/ariakit/src"],
-      "ariakit/*": ["packages/ariakit/src/*"],
+      "ariakit-changesets-test": ["packages/ariakit-changesets-test/src"],
+      "ariakit-changesets-test/*": ["packages/ariakit-changesets-test/src/*"],
 
-      "ariakit-playground": ["packages/ariakit-playground/src"],
-      "ariakit-playground/*": ["packages/ariakit-playground/src/*"],
+      "ariakit-changesets-test-playground": ["packages/ariakit-changesets-test-playground/src"],
+      "ariakit-changesets-test-playground/*": ["packages/ariakit-changesets-test-playground/src/*"],
 
-      "ariakit-test-utils": ["packages/ariakit-test-utils/src"],
-      "ariakit-test-utils/*": ["packages/ariakit-test-utils/src/*"],
+      "ariakit-changesets-test-test-utils": ["packages/ariakit-changesets-test-test-utils/src"],
+      "ariakit-changesets-test-test-utils/*": ["packages/ariakit-changesets-test-test-utils/src/*"],
 
-      "ariakit-utils": ["packages/ariakit-utils/src"],
-      "ariakit-utils/*": ["packages/ariakit-utils/src/*"]
+      "ariakit-changesets-test-utils": ["packages/ariakit-changesets-test-utils/src"],
+      "ariakit-changesets-test-utils/*": ["packages/ariakit-changesets-test-utils/src/*"]
     }
   }
 }

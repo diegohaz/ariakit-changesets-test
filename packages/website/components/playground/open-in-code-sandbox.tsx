@@ -1,8 +1,8 @@
 import {
   OpenInCodeSandbox as Action,
   OpenInCodeSandboxProps as ActionProps,
-} from "ariakit-playground/actions/open-in-code-sandbox";
-import { cx } from "ariakit-utils/misc";
+} from "ariakit-changesets-test-playground/actions/open-in-code-sandbox";
+import { cx } from "ariakit-changesets-test-utils/misc";
 import TooltipButton, { TooltipButtonOptions } from "../tooltip-button";
 
 export type OpenInCodeSandboxProps = ActionProps &
@@ -23,7 +23,7 @@ export default function OpenInCodeSandbox(props: OpenInCodeSandboxProps) {
       className={cx(
         "h-10 rounded-md px-4 text-base sm:h-8 sm:rounded sm:px-3 sm:text-sm",
         "bg-alpha-2 hover:bg-alpha-2-hover dark:hover:bg-alpha-2-dark-hover",
-        "text-black-fade focus-visible:ariakit-outline dark:text-white-fade",
+        "text-black-fade focus-visible:ariakit-changesets-test-outline dark:text-white-fade",
         props.className
       )}
     >

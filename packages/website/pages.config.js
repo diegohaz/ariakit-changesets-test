@@ -12,7 +12,7 @@ module.exports = [
   },
   {
     name: "components",
-    sourceContext: path.resolve(__dirname, "../ariakit/src"),
+    sourceContext: path.resolve(__dirname, "../ariakit-changesets-test/src"),
     sourceRegExp: /src\/[^\/]+\/[^\/]+\.md$/,
     componentPath,
   },

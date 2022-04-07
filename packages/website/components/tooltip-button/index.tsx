@@ -1,14 +1,14 @@
 import { ElementType } from "react";
-import { cx } from "ariakit-utils/misc";
-import { createComponent } from "ariakit-utils/system";
-import { Button } from "ariakit/button";
+import { cx } from "ariakit-changesets-test-utils/misc";
+import { createComponent } from "ariakit-changesets-test-utils/system";
+import { Button } from "ariakit-changesets-test/button";
 import {
   Tooltip,
   TooltipAnchor,
   TooltipAnchorOptions,
   TooltipProps,
   useTooltipState,
-} from "ariakit/tooltip";
+} from "ariakit-changesets-test/tooltip";
 
 export type TooltipButtonOptions<T extends ElementType = "button"> = Omit<
   TooltipAnchorOptions<T>,

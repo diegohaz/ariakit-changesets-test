@@ -9,8 +9,8 @@ module.exports = {
     "<rootDir>/docs/jest.config.js",
   ],
   collectCoverageFrom: [
-    "packages/ariakit/src/**/*.{js,ts,tsx}",
-    "packages/ariakit-utils/src/**/*.{js,ts,tsx}",
+    "packages/ariakit-changesets-test/src/**/*.{js,ts,tsx}",
+    "packages/ariakit-changesets-test-utils/src/**/*.{js,ts,tsx}",
     "!**/*test.{js,ts,tsx}",
   ],
   moduleNameMapper: {

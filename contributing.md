@@ -20,13 +20,13 @@ This guide is intended to help you get started with contributing to the project.
 To start contributing to the project, you have to fork this repository and clone it to your local machine:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/ariakit.git
+git clone https://github.com/YOUR_USERNAME/ariakit-changesets-test.git
 ```
 
 If you are already part of the organization on GitHub, you can clone the repository directly:
 
 ```bash
-git clone https://github.com/ariakit/ariakit.git
+git clone https://github.com/ariakit-changesets-test/ariakit-changesets-test.git
 ```
 
 ## Installing Node.js and npm
@@ -82,19 +82,19 @@ Now you can open http://localhost:3000 in your browser to see the project's site
 
 To create a new component, create a file with the following contents:
 
-`packages/ariakit/src/my-component/my-component.ts`
+`packages/ariakit-changesets-test/src/my-component/my-component.ts`
 
 ````tsx
 import {
   createComponent,
   createElement,
   createHook,
-} from "ariakit-utils/system";
-import { As, Options, Props } from "ariakit-utils/types";
+} from "ariakit-changesets-test-utils/system";
+import { As, Options, Props } from "ariakit-changesets-test-utils/types";
 
 /**
  * Description for my component hook.
- * @see https://ariakit.org/components/my-component
+ * @see https://ariakit-changesets-test.org/components/my-component
  * @example
  * ```jsx
  * const props = useMyComponent();
@@ -110,7 +110,7 @@ export const useMyComponent = createHook<MyComponentOptions>(
 
 /**
  * Description for my component.
- * @see https://ariakit.org/components/my-component
+ * @see https://ariakit-changesets-test.org/components/my-component
  * @example
  * ```jsx
  * <MyComponent />
@@ -133,11 +133,11 @@ export type MyComponentProps<T extends As = "div"> = Props<
 >;
 ````
 
-That's the basic structure for all components in the project. This will guarantee that the component will support all the library's [core features](https://ariakit.org/guide/core-features). You can take a look at other components to see more complex examples.
+That's the basic structure for all components in the project. This will guarantee that the component will support all the library's [core features](https://ariakit-changesets-test.org/guide/core-features). You can take a look at other components to see more complex examples.
 
 Finally, create an `index.ts` file in the same directory as the component. This file will be used to export the component:
 
-`packages/ariakit/src/my-component/index.ts`
+`packages/ariakit-changesets-test/src/my-component/index.ts`
 
 ```tsx
 export * from "./my-component";
@@ -151,10 +151,10 @@ The development workflow on this project is entirely based on examples. You can 
 
 Let's create a default example for our component:
 
-`packages/ariakit/src/my-component/__examples__/my-component/index.tsx`
+`packages/ariakit-changesets-test/src/my-component/__examples__/my-component/index.tsx`
 
 ```tsx
-import { MyComponent } from "ariakit/my-component";
+import { MyComponent } from "ariakit-changesets-test/my-component";
 
 export default function Example() {
   return <MyComponent />;
@@ -171,7 +171,7 @@ When necessary, you can apply styles to the example. We're using [Tailwind](http
 >
 > Make sure you also take [dark mode](https://tailwindcss.com/docs/dark-mode) into account.
 
-`packages/ariakit/src/my-component/__examples__/my-component/style.css`
+`packages/ariakit-changesets-test/src/my-component/__examples__/my-component/style.css`
 
 ```css
 .my-component {
@@ -181,10 +181,10 @@ When necessary, you can apply styles to the example. We're using [Tailwind](http
 
 Now we need to import the CSS file on the example's `index.tsx` file and add the class name to the respective elements:
 
-`packages/ariakit/src/my-component/__examples__/my-component/index.tsx`
+`packages/ariakit-changesets-test/src/my-component/__examples__/my-component/index.tsx`
 
 ```tsx
-import { MyComponent } from "ariakit/my-component";
+import { MyComponent } from "ariakit-changesets-test/my-component";
 import "./style.css";
 
 export default function Example() {
@@ -198,16 +198,16 @@ You'll notice that the transpiled CSS file has been also added to editor's files
 
 ## Testing the example
 
-One of the goals of having use cases written like that is so we can write automated tests for them. Instead of testing the Ariakit components directly, we're testing the examples that represent the way people use Ariakit components.
+One of the goals of having use cases written like that is so we can write automated tests for them. Instead of testing the ariakit-changesets-test components directly, we're testing the examples that represent the way people use ariakit-changesets-test components.
 
-> We use [`ariakit-test-utils`](packages/ariakit-test-utils), which is a wrapper around [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) with some additional features to ensure that events like clicks and key presses work similarly to actual user events.
+> We use [`ariakit-changesets-test-test-utils`](packages/ariakit-changesets-test-test-utils), which is a wrapper around [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) with some additional features to ensure that events like clicks and key presses work similarly to actual user events.
 
 Let's create a test for our example:
 
-`packages/ariakit/src/my-component/__examples__/my-component/test.tsx`
+`packages/ariakit-changesets-test/src/my-component/__examples__/my-component/test.tsx`
 
 ```tsx
-import { render, getByText } from "ariakit-test-utils";
+import { render, getByText } from "ariakit-changesets-test-test-utils";
 import Example from ".";
 
 test("My component", () => {
@@ -228,7 +228,7 @@ Now we can write the documentation for the component itself using the example we
 
 We can create a `readme.md` file in the component's directory and render an anchor element pointing to the example's index file with a `data-playground` attribute. This will turn the link into a playground.
 
-`packages/ariakit/src/my-component/readme.md`
+`packages/ariakit-changesets-test/src/my-component/readme.md`
 
 ````markdown
 # My component
@@ -244,7 +244,7 @@ This is my component.
 ## Installation
 
 ```bash
-npm install ariakit
+npm install ariakit-changesets-test
 ```
 
 Learn more on [Get started](/guide/get-started).
@@ -260,10 +260,10 @@ A component may have multiple examples besides the default one. This is useful w
 
 Let's create another example for our component:
 
-`packages/ariakit/src/my-component/__examples__/my-component-custom-prop/index.tsx`
+`packages/ariakit-changesets-test/src/my-component/__examples__/my-component-custom-prop/index.tsx`
 
 ```tsx
-import { MyComponent } from "ariakit/my-component";
+import { MyComponent } from "ariakit-changesets-test/my-component";
 import "./style.css";
 
 export default function Example() {
@@ -277,7 +277,7 @@ Now you can open http://localhost:3000/examples/my-component-custom-prop in your
 
 We can `@import` CSS files from other examples. You'll usually import the CSS file from the default example on the other examples so you don't need to repeat yourself.
 
-`packages/ariakit/src/my-component/__examples__/my-component-custom-prop/style.css`
+`packages/ariakit-changesets-test/src/my-component/__examples__/my-component-custom-prop/style.css`
 
 ```css
 @import url("../my-component/style.css");
@@ -291,7 +291,7 @@ We can `@import` CSS files from other examples. You'll usually import the CSS fi
 
 Unlike default examples, other examples will be primarily accessed through their own URLs (`/examples/my-component-custom-prop`). To write documentation for them, we can create a `readme.md` file in the example's directory and follow the same convention as for the component's `readme.md` file.
 
-`packages/ariakit/src/my-component/__examples__/my-component-custom-prop/readme.md`
+`packages/ariakit-changesets-test/src/my-component/__examples__/my-component-custom-prop/readme.md`
 
 ````markdown
 # My component with `customProp`
