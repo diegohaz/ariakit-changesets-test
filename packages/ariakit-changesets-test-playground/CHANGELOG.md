@@ -1,5 +1,11 @@
 # ariakit-changesets-test-playground
 
+## 0.17.3-alpha.0
+
+### Patch Changes
+
+- Updated dependencies: `ariakit-changesets-test@2.2.0-alpha.0`.
+
 ## 0.17.2
 
 ### Patch Changes
