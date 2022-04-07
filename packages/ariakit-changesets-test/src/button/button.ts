@@ -46,7 +46,7 @@ export const useButton = createHook<ButtonOptions>((props) => {
 /**
  * A component that renders a native accessible button. If another element is
  * passed to the `as` prop, this component will make sure the rendered element is
- * accessible.
+ * accessible
  * @see https://ariakit-changesets-test.org/components/button
  * @example
  * ```jsx
