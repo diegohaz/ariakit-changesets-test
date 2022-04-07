@@ -9,7 +9,10 @@
     "website": "0.0.0"
   },
   "changesets": [
+    "fast-singers-raise",
+    "nine-teachers-work",
     "stupid-comics-guess",
+    "ten-sloths-deliver",
     "tough-ducks-build",
     "young-kings-count"
   ]
