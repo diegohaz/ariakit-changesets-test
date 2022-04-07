@@ -1,7 +1,7 @@
 import { forwardRef } from "react";
-import { cx } from "ariakit-utils/misc";
-import { ButtonProps, useButton } from "ariakit/button";
-import { Role } from "ariakit/role";
+import { cx } from "ariakit-changesets-test-utils/misc";
+import { ButtonProps, useButton } from "ariakit-changesets-test/button";
+import { Role } from "ariakit-changesets-test/role";
 
 export type PlaygroundDisclosureProps = ButtonProps;
 
@@ -41,7 +41,7 @@ const PlaygroundDisclosure = forwardRef<
       }}
       className={cx(
         "flex w-full items-center justify-center gap-1 border-none text-base",
-        "cursor-pointer text-[color:inherit] hover:underline focus-visible:ariakit-outline",
+        "cursor-pointer text-[color:inherit] hover:underline focus-visible:ariakit-changesets-test-outline",
         expanded && "rounded bg-none p-2",
         !expanded &&
           "absolute bottom-0 rounded-bl-[inherit] rounded-br-[inherit] p-4 pt-12 text-canvas-1-dark",

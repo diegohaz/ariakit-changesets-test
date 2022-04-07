@@ -1,24 +1,29 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { css } from "@emotion/react";
-import { Playground as PlaygroundContainer } from "ariakit-playground/playground";
-import { PlaygroundEditorProps } from "ariakit-playground/playground-editor";
-import { PlaygroundPreviewProps } from "ariakit-playground/playground-preview";
-import { usePlaygroundState } from "ariakit-playground/playground-state";
-import darkTheme from "ariakit-playground/themes/vscode-dark";
+import { Playground as PlaygroundContainer } from "ariakit-changesets-test-playground/playground";
+import { PlaygroundEditorProps } from "ariakit-changesets-test-playground/playground-editor";
+import { PlaygroundPreviewProps } from "ariakit-changesets-test-playground/playground-preview";
+import { usePlaygroundState } from "ariakit-changesets-test-playground/playground-state";
+import darkTheme from "ariakit-changesets-test-playground/themes/vscode-dark";
 import {
   useEventCallback,
   useId,
   useLazyRef,
   useLiveRef,
   useUpdateEffect,
-} from "ariakit-utils/hooks";
-import { cx, hasOwnProperty } from "ariakit-utils/misc";
+} from "ariakit-changesets-test-utils/hooks";
+import { cx, hasOwnProperty } from "ariakit-changesets-test-utils/misc";
 import {
   CompositeOverflow,
   CompositeOverflowDisclosure,
   useCompositeOverflowState,
-} from "ariakit/composite";
-import { Tab, TabList, TabPanel, useTabState } from "ariakit/tab";
+} from "ariakit-changesets-test/composite";
+import {
+  Tab,
+  TabList,
+  TabPanel,
+  useTabState,
+} from "ariakit-changesets-test/tab";
 import dynamic from "next/dynamic";
 import useOverflowList from "packages/website/utils/use-overflow-list";
 import Popup from "../popup";
@@ -40,7 +45,7 @@ const errorProps = { as: PlaygroundError };
 
 const PlaygroundEditor = dynamic<PlaygroundEditorProps>(
   () =>
-    import("ariakit-playground/playground-editor").then(
+    import("ariakit-changesets-test-playground/playground-editor").then(
       (mod) => mod.PlaygroundEditor
     ),
   {
@@ -51,7 +56,7 @@ const PlaygroundEditor = dynamic<PlaygroundEditorProps>(
 );
 
 const PlaygroundPreview = dynamic<PlaygroundPreviewProps>(() =>
-  import("ariakit-playground/playground-preview").then(
+  import("ariakit-changesets-test-playground/playground-preview").then(
     (mod) => mod.PlaygroundPreview
   )
 );
@@ -149,7 +154,7 @@ export default function Playground(props: PlaygroundProps) {
         "dark:text-white-fade dark:hover:bg-alpha-2-dark-hover",
         "dark:aria-selected:bg-primary-2-dark dark:aria-selected:text-primary-2-dark",
         "dark:aria-selected:hover:bg-primary-2-dark-hover",
-        "flex-start flex items-center focus-visible:ariakit-outline"
+        "flex-start flex items-center focus-visible:ariakit-changesets-test-outline"
       )}
       key={file}
       id={getTabId(file, baseId)}
@@ -190,7 +195,7 @@ export default function Playground(props: PlaygroundProps) {
                   <CompositeOverflowDisclosure
                     state={overflow}
                     className="h-10 rounded bg-alpha-2 px-4 text-base text-black-fade hover:bg-alpha-2-hover
-                    focus-visible:ariakit-outline aria-expanded:bg-alpha-1 dark:text-white-fade
+                    focus-visible:ariakit-changesets-test-outline aria-expanded:bg-alpha-1 dark:text-white-fade
                     dark:hover:bg-alpha-2-dark-hover dark:aria-expanded:bg-alpha-1-dark
                     sm:h-8 sm:px-3
                     sm:text-sm"
@@ -225,7 +230,7 @@ export default function Playground(props: PlaygroundProps) {
                   <div {...props}>
                     <PlaygroundEditor
                       lineNumbers
-                      className="bg-canvas-1 focus-visible:ariakit-outline-input dark:bg-canvas-1-dark"
+                      className="bg-canvas-1 focus-visible:ariakit-changesets-test-outline-input dark:bg-canvas-1-dark"
                       state={playground}
                       file={file}
                       theme={theme}

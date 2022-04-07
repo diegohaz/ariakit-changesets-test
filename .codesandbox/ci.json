@@ -1,5 +1,5 @@
 {
-  "packages": ["packages/ariakit*"],
+  "packages": ["packages/ariakit-changesets-test*"],
   "buildCommand": "build",
   "sandboxes": ["m4n32vjkoj"]
 }

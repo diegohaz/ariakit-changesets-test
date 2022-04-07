@@ -15,7 +15,7 @@
     "lint": "eslint . --ext js,ts,tsx",
     "lint-css": "stylelint '**/*.css' --ignore-path .gitignore",
     "type-check": "tsc --noEmit",
-    "build": "lerna exec --scope ariakit* -- npm run build",
+    "build": "lerna exec --scope ariakit-changesets-test* -- npm run build",
     "build-website": "lerna exec --scope website -- npm run build",
     "clean": "npm run clean -ws --if-present",
     "release": "lerna publish --pre-dist-tag latest",

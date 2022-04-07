@@ -1,0 +1,40 @@
+{
+  "name": "ariakit-changesets-test-test-utils",
+  "version": "0.17.0-alpha.16",
+  "description": "ariakit-changesets-test test utils",
+  "sideEffects": false,
+  "license": "MIT",
+  "homepage": "https://ariakit-changesets-test.org",
+  "main": "cjs/index.js",
+  "module": "esm/index.js",
+  "unpkg": "umd/ariakit-changesets-test-test-utils.min.js",
+  "types": "ts/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ariakit-changesets-test/ariakit-changesets-test.git",
+    "directory": "packages/ariakit-changesets-test-test-utils"
+  },
+  "author": {
+    "name": "Diego Haz",
+    "email": "hazdiego@gmail.com",
+    "url": "https://github.com/diegohaz"
+  },
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint . --ext js,ts,tsx",
+    "build": "node ../../scripts/build",
+    "clean": "node ../../scripts/build/clean.js"
+  },
+  "keywords": [
+    "ariakit-changesets-test",
+    "react"
+  ],
+  "dependencies": {
+    "ariakit-changesets-test-utils": "file:../ariakit-changesets-test-utils"
+  },
+  "peerDependencies": {
+    "@testing-library/dom": "^8.0.0",
+    "@testing-library/react": "^12.0.0 || ^13.0.0 || ^13.0.0-alpha",
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
+  }
+}

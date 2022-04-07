@@ -38,7 +38,8 @@ module.exports = {
       "babel-plugin-module-resolver",
       {
         alias: {
-          "^ariakit([^/]*)(.*)$": "ariakit\\1/src\\2",
+          "^ariakit-changesets-test([^/]*)(.*)$":
+            "ariakit-changesets-test\\1/src\\2",
         },
       },
     ],

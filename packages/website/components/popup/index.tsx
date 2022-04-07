@@ -1,5 +1,5 @@
 import { HTMLAttributes, forwardRef } from "react";
-import { cx } from "ariakit-utils/misc";
+import { cx } from "ariakit-changesets-test-utils/misc";
 
 type PopupProps = HTMLAttributes<HTMLDivElement> & {
   elevation?: 0 | 1 | 2 | 3 | 4;
@@ -23,7 +23,7 @@ const Popup = forwardRef<HTMLDivElement, PopupProps>(
           "rounded-lg border border-solid",
           "border-canvas-4 dark:border-canvas-4-dark",
           "bg-canvas-4 text-canvas-4 dark:bg-canvas-4-dark",
-          "focus-visible:ariakit-outline dark:text-canvas-4-dark",
+          "focus-visible:ariakit-changesets-test-outline dark:text-canvas-4-dark",
           elevationMap[elevation],
           props.className
         )}

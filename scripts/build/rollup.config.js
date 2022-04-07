@@ -83,8 +83,8 @@ function getOutput(isUMD) {
       format: "umd",
       exports: "named",
       globals: {
-        ariakit: "Ariakit",
         react: "React",
+        "ariakit-changesets-test": "ariakit-changesets-test",
         "react-dom": "ReactDOM",
         "@testing-library/react": "TestingLibraryReact",
         "@testing-library/dom": "TestingLibraryDom",

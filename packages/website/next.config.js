@@ -4,7 +4,7 @@ const React = require("react");
 const PagesWebpackPlugin = require("../../scripts/pages/pages-webpack-plugin");
 const pages = require("./pages.config");
 
-const withTranspileModules = transpileModules(["ariakit"]);
+const withTranspileModules = transpileModules(["ariakit-changesets-test"]);
 
 /** @type {import("next").NextConfig} */
 const nextConfig = {
