@@ -10,6 +10,7 @@
   },
   "changesets": [
     "stupid-comics-guess",
+    "tough-ducks-build",
     "young-kings-count"
   ]
 }

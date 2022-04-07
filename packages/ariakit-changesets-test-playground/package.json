@@ -1,6 +1,6 @@
 {
   "name": "ariakit-changesets-test-playground",
-  "version": "1.0.0-alpha.24",
+  "version": "1.0.0-alpha.25",
   "description": "ariakit-changesets-test playground",
   "sideEffects": false,
   "license": "MIT",
@@ -50,12 +50,12 @@
     "prismjs": "^1.26.0"
   },
   "peerDependencies": {
-    "ariakit-changesets-test": "^2.0.0-alpha.24",
+    "ariakit-changesets-test": "^2.0.0-alpha.25",
     "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
   },
   "devDependencies": {
     "@types/babel__standalone": "7.1.4",
     "@types/prismjs": "1.26.0",
-    "ariakit-changesets-test": "2.0.0-alpha.24"
+    "ariakit-changesets-test": "2.0.0-alpha.25"
   }
 }
