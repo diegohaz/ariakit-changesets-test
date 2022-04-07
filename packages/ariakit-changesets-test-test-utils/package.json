@@ -30,7 +30,7 @@
     "react"
   ],
   "dependencies": {
-    "ariakit-changesets-test-utils": "file:../ariakit-changesets-test-utils"
+    "ariakit-changesets-test-utils": "0.17.0-alpha.15"
   },
   "peerDependencies": {
     "@testing-library/dom": "^8.0.0",

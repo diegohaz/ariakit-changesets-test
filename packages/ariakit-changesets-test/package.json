@@ -39,7 +39,7 @@
   ],
   "dependencies": {
     "@popperjs/core": "^2.11.2",
-    "ariakit-changesets-test-utils": "file:../ariakit-changesets-test-utils"
+    "ariakit-changesets-test-utils": "0.17.0-alpha.15"
   },
   "peerDependencies": {
     "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
