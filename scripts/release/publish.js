@@ -11,9 +11,7 @@ if (!tag) process.exit();
 const packages = changeset.stdout
   .toString()
   .split("\n")
-  .filter((line) => /^[a-z0-9\-]+@[a-z0-9\.\-]+$/.test(line));
-
-console.log(`packages`, changeset.stdout.toString().split("\n"));
+  .filter((line) => /^\S+@\S+$/.test(line.replace("🦋  ", "")));
 
 for (const package of packages) {
   console.log(`npm dist-tag add ${package} ${tag}`);
