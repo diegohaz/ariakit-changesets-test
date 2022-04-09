@@ -2,9 +2,10 @@ const spawn = require("cross-spawn");
 
 const changeset = spawn.sync("npx", ["changeset", "publish"]);
 
-const tag = process.env.RELEASE_TAG;
+console.log(changeset.stderr.toString());
+console.log(changeset.stdout.toString());
 
-console.log("tag", tag);
+const tag = process.env.RELEASE_TAG;
 
 if (!tag) process.exit();
 
@@ -15,6 +16,5 @@ const packages = changeset.stdout
   .map((line) => line.replace("🦋  ", ""));
 
 for (const package of packages) {
-  console.log(`npm dist-tag add ${package} ${tag}`);
   spawn.sync("npm", ["dist-tag", "add", package, tag], { stdio: "inherit" });
 }
