@@ -13,7 +13,7 @@ const packages = changeset.stdout
   .split("\n")
   .filter((line) => /^\S+@\S+$/.test(line));
 
-console.log(`packages ${packages}`);
+console.log(`packages`, changeset.stdout.toString().split("\n"));
 
 for (const package of packages) {
   console.log(`npm dist-tag add ${package} ${tag}`);
