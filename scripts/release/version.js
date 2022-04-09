@@ -1,8 +1,6 @@
 const spawn = require("cross-spawn");
 
-spawn.sync("changeset", ["version"], {
-  cwd: process.cwd(),
-  env: process.env,
+spawn.sync("npx", ["changeset", "version"], {
   stdio: "inherit",
 });
 
