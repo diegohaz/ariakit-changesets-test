@@ -9,6 +9,8 @@
     "website": "0.0.0"
   },
   "changesets": [
-    "dirty-tips-march"
+    "dirty-tips-march",
+    "fair-falcons-lie",
+    "tame-pens-whisper"
   ]
 }
