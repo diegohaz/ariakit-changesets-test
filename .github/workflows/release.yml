@@ -60,4 +60,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-          RELEASE_TAGS: ${{ github.ref_name	== "main" && "latest" || github.ref_name }}
+          RELEASE_TAGS: ${{ github.ref_name	== 'main' && 'latest' || github.ref_name }}
