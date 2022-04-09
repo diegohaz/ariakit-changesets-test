@@ -11,7 +11,7 @@ if (!tag) process.exit();
 const packages = changeset.stdout
   .toString()
   .split("\n")
-  .filter((line) => /^\S+@\S+$/.test(line));
+  .filter((line) => /^[a-z0-9\-]+@[a-z0-9\.\-]+$/.test(line));
 
 console.log(`packages`, changeset.stdout.toString().split("\n"));
 
