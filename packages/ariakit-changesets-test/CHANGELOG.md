@@ -1,5 +1,11 @@
 # ariakit-changesets-test
 
+## 2.2.0-alpha.3
+
+### Patch Changes
+
+- dsadsa
+
 ## 2.2.0-alpha.2
 
 ### Patch Changes
