@@ -1,6 +1,8 @@
 const spawn = require("cross-spawn");
 
-const output = spawn.sync("changeset", ["publish"], { stdio: "inherit" });
+const output = spawn.sync("npx", ["changeset", "publish"], {
+  stdio: "inherit",
+});
 
 console.log(JSON.stringify(output, null, 2));
 
