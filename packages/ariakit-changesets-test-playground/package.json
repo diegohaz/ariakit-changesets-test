@@ -1,6 +1,6 @@
 {
   "name": "ariakit-changesets-test-playground",
-  "version": "0.17.3-alpha.5",
+  "version": "0.17.3-alpha.6",
   "description": "ariakit-changesets-test playground",
   "sideEffects": false,
   "license": "MIT",
@@ -45,7 +45,7 @@
     "@codemirror/view": "0.19.48",
     "@codesandbox/sandpack-client": "0.18.0",
     "@emotion/react": "^11.7.1",
-    "ariakit-changesets-test": "2.2.0-alpha.5",
+    "ariakit-changesets-test": "2.2.0-alpha.6",
     "ariakit-changesets-test-utils": "0.17.1",
     "codesandbox-import-utils": "^2.2.3",
     "prismjs": "^1.26.0"
