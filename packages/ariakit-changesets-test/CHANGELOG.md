@@ -1,5 +1,12 @@
 # ariakit-changesets-test
 
+## 2.2.0-alpha.1
+
+### Patch Changes
+
+- Add more features
+- Tewss
+
 ## 2.2.0-alpha.0
 
 ### Minor Changes
