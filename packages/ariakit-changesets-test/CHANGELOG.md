@@ -5,6 +5,11 @@
 ### Minor Changes
 
 - Add new cool feature
+## 2.2.1
+
+### Patch Changes
+
+- Something
 
 ## 2.2.0
 

@@ -5,6 +5,11 @@
 ### Patch Changes
 
 - Updated dependencies: `ariakit-changesets-test@2.3.0-next.0`.
+## 0.17.4
+
+### Patch Changes
+
+- Updated dependencies: `ariakit-changesets-test@2.2.1`.
 
 ## 0.17.3
 
