@@ -1,5 +1,5 @@
 {
-  "mode": "pre",
+  "mode": "exit",
   "tag": "next",
   "initialVersions": {
     "ariakit-changesets-test": "2.2.0",
@@ -8,8 +8,5 @@
     "ariakit-changesets-test-utils": "0.17.1",
     "website": "0.0.0"
   },
-  "changesets": [
-    "five-badgers-hear",
-    "hungry-hotels-drop"
-  ]
+  "changesets": ["five-badgers-hear", "hungry-hotels-drop", "some random test"]
 }
