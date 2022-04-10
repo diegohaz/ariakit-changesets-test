@@ -1,5 +1,24 @@
 # ariakit-changesets-test
 
+## 2.2.0
+
+### Minor Changes
+
+- Add some new feature
+- New beta
+
+### Patch Changes
+
+- dsssss
+- Add more features
+- dsadsadas
+- dsadsa
+- dsadsa
+- sssssssssssssssss
+- Tewss
+- sdsadsadasdsa
+- dsadsadddddd
+
 ## 2.2.0-alpha.8
 
 ### Patch Changes
