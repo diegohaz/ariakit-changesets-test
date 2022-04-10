@@ -1,5 +1,11 @@
 # ariakit-changesets-test
 
+## 2.4.0-next.0
+
+### Minor Changes
+
+- New feature
+
 ## 2.3.1
 
 ### Patch Changes
