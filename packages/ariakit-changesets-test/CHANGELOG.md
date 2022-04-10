@@ -1,5 +1,11 @@
 # ariakit-changesets-test
 
+## 2.3.0-next.0
+
+### Minor Changes
+
+- Add new cool feature
+
 ## 2.2.0
 
 ### Minor Changes
