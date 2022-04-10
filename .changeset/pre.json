@@ -1,9 +1,9 @@
 {
   "mode": "pre",
-  "tag": "beta",
+  "tag": "alpha",
   "initialVersions": {
-    "ariakit-changesets-test": "2.2.0-alpha.8",
-    "ariakit-changesets-test-playground": "0.17.3-alpha.8",
+    "ariakit-changesets-test": "2.1.1",
+    "ariakit-changesets-test-playground": "0.17.2",
     "ariakit-changesets-test-test-utils": "0.17.1",
     "ariakit-changesets-test-utils": "0.17.1",
     "website": "0.0.0"
