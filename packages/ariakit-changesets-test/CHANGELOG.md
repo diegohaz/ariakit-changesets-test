@@ -1,5 +1,11 @@
 # ariakit-changesets-test
 
+## 2.2.1
+
+### Patch Changes
+
+- Something
+
 ## 2.2.0
 
 ### Minor Changes
