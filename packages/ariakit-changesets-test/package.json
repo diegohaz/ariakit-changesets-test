@@ -1,6 +1,6 @@
 {
   "name": "ariakit-changesets-test",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "description": "Toolkit for building accessible web apps with React",
   "sideEffects": false,
   "license": "MIT",
