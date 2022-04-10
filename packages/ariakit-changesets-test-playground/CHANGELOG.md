@@ -1,5 +1,12 @@
 # ariakit-changesets-test-playground
 
+## 0.17.3
+
+### Patch Changes
+
+- Tewss
+- Updated dependencies: `ariakit-changesets-test@2.2.0`.
+
 ## 0.17.3-alpha.8
 
 ### Patch Changes
